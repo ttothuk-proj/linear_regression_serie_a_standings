@@ -19,6 +19,11 @@ for year in range(1994, 2020):
 ```
 Sklearn's Linear Regression model is used to predict the values. For the function to work effectively the data had to be reshaped.
 ```Python
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.linear_model import LinearRegression
+
 # dependant variable - what we are trying to predict
 y = df.Standing
 # independant - what we want to predict from
