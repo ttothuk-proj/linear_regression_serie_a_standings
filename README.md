@@ -1,7 +1,7 @@
 # Serie A standings prediction using linear regression
 
 A model is created to predict the final league rank of a based on goal difference.  
-The data was acquired from (WorldFootball)[https://www.worldfootball.net/schedule/ita-serie-a-2019-2020-spieltag/38/] using the pandas pythin library.
+The data was acquired from [WorldFootball](https://www.worldfootball.net/schedule/ita-serie-a-2019-2020-spieltag/38/) using the pandas Python library.
 
  
 ### First image
