@@ -24,8 +24,48 @@ y = df.Standing
 # independant - what we want to predict from
 x = df.GD.values.reshape(-1,1)
 ```
+The model needs to be fit usings Sklearn's function, from which we can evaluate our model and create the line of best fit. R-Squared = 0.8403
+```Python
+model = LinearRegression().fit(x,y)
+r_sq = model.score(x,y)
+intercept = model.intercept_
+slope = model.coef_
+```
+The equation of a straight line is : **y = mx + b**  
+Where **b** is the intercept and **m** is the slope.
+```Python
+y_pred = intercept + slope*x
+```
+
+To create our first plot the matplotlib and seaborn libraries were used.
+```Python
+fig, ax = plt.subplots(figsize= (12,12), facecolor='#fffbdc')
+ax.set_facecolor('#fffbdc')
+plt.scatter(x,y, alpha=0.8, c="#0066cc")
+plt.plot(x, y_pred, c="red")
+
+
+ax.spines['left'].set_linewidth(1.5)
+ax.spines['bottom'].set_linewidth(1.5)
+
+plt.yticks(np.arange(0,21,1))
+plt.xticks(np.arange(-70,71,10))
+
+plt.ylim(0.5, 20.5)
+plt.xlim(-65, 70)
+
+plt.grid(axis = 'x', linewidth = 0.2)
+plt.grid(axis = 'y', linewidth = 0.2)
+
+plt.gca().invert_yaxis()
+
+plt.xlabel("Goal difference", fontsize=20)
+plt.ylabel("Standings ", fontsize=20)
+sns.despine()
+plt.title("Relationship between goal diff. and standings \n Serie A 1990-2020\n",fontdict= { 'fontsize': 24, 'fontweight':'bold'});
+```
  
-### First image
+### 1990 - 2020
 R-Squared = 0.840
 Regression equation = y = 10.06 + -0.2323 * x
 
