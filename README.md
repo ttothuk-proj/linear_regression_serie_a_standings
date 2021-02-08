@@ -1,6 +1,6 @@
 # Serie A standings prediction using linear regression
 
-## A model is created to predict the final league rank of a based on goal difference.  
+## A model is created to predict the final league rank of a team based on goal difference.  
 The data was acquired from [WorldFootball](https://www.worldfootball.net/schedule/ita-serie-a-2019-2020-spieltag/38/) using the pandas Python library. The dataframe was cleaned from the null values and the needed information (Team name, standings, GD) was subtracted. 
 ```Python
 import pandas as pd
@@ -83,7 +83,7 @@ Regression equation = y = 10.06 + -0.2323 * x
 
 ![](regression_with_names.png)
 
-The line of best fit cleary suggests that a bigged GD usually means a better standings on the table. The most outstanding values and performances are highlighted from the last 30 years.
+The line of best fit cleary suggests that a bigger GD usually means a better standings on the table. The most outstanding values and performances are highlighted from the last 30 years. Other impressive performances belong to Juventus' and Sassulo's 2017/18 season. One of the matches between the 2 sides ended 7-0, which could explain the goal difference. 
 
 Intresingly, there are some protruding values connected to dominant teams in the year 2005/06. The simple explanation is the [Calciopoli](https://en.wikipedia.org/wiki/Calciopoli). Calciopoli was a scandal of football match fixing in Italy's top professional leagues, Serie A, and Serie B. The scandal was uncovered in May 2006, when a number of telephone interceptions showed relations between team managers and referee organizations during the 2004–05 and 2005–06 seasons, being accused of selecting favourable referees. This implicated league champions Juventus and several other teams including Milan, Fiorentina, Lazio, and Reggina. In July 2006, Juventus were stripped of the 2004–05 title, and was downgraded to last place in the 2005–06 championship (title given to Internazionale) and relegated to Serie B. Several other teams than Juventus, such as AC Milan, Fiorentina  or Lazio had some or their points deducted.  
 
