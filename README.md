@@ -78,7 +78,7 @@ plt.title("Relationship between goal diff. and standings \n Serie A 1990-2020\n"
 ```
  
 ### 1990 - 2020
-R-Squared = 0.840
+R-Squared = 0.840  
 Regression equation = y = 10.06 + -0.2323 * x
 
 ![](regression_with_names.png)
@@ -94,7 +94,7 @@ df = df[df["Year"] != 2005]
 ```
 
 ### 1990 - 2020 (excl. 2005/06)
-R-Squared = 0.852
+R-Squared = 0.852  
 Regression equation = y = 10.04 + -0.2348 * x
 
 
