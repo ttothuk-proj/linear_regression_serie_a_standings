@@ -33,6 +33,7 @@ slope = model.coef_
 ```
 The equation of a straight line is : **y = mx + b**  
 Where **b** is the intercept and **m** is the slope.
+Each GD change influences your standing by around 0.23 position.
 ```Python
 y_pred = intercept + slope*x
 ```
@@ -69,10 +70,13 @@ plt.title("Relationship between goal diff. and standings \n Serie A 1990-2020\n"
 R-Squared = 0.840
 Regression equation = y = 10.06 + -0.2323 * x
 
-
 ![](regression_with_names.png)
 
-### Second image
+The line of best fit cleary suggests that a bigged GD usually means a better standings on the table. The most outstanding values and performances are highlighted from the last 30 years.
+
+Intresingly, there are some protruding values connected to dominant teams in the year 2005/06.
+
+### 1990 - 2020 (excl. 2005/06)
 R-Squared = 0.852
 Regression equation = y = 10.04 + -0.2348 * x
 
