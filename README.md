@@ -88,6 +88,7 @@ The line of best fit cleary suggests that a bigged GD usually means a better sta
 Intresingly, there are some protruding values connected to dominant teams in the year 2005/06. The simple explanation is the [Calciopoli](https://en.wikipedia.org/wiki/Calciopoli). Calciopoli was a scandal of football match fixing in Italy's top professional leagues, Serie A, and Serie B. The scandal was uncovered in May 2006, when a number of telephone interceptions showed relations between team managers and referee organizations during the 2004–05 and 2005–06 seasons, being accused of selecting favourable referees. This implicated league champions Juventus and several other teams including Milan, Fiorentina, Lazio, and Reggina. In July 2006, Juventus were stripped of the 2004–05 title, and was downgraded to last place in the 2005–06 championship (title given to Internazionale) and relegated to Serie B. Several other teams than Juventus, such as AC Milan, Fiorentina  or Lazio had some or their points deducted.  
 
 
+Removing the 2005/06 season from our dataset provides us with a higher, 0.852 R-Squared score.
 
 ### 1990 - 2020 (excl. 2005/06)
 R-Squared = 0.852
