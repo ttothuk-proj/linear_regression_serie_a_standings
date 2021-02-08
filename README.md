@@ -89,6 +89,9 @@ Intresingly, there are some protruding values connected to dominant teams in the
 
 
 Removing the 2005/06 season from our dataset provides us with a higher, 0.852 R-Squared score.
+```Python
+df = df[df["Year"] != 2005]
+```
 
 ### 1990 - 2020 (excl. 2005/06)
 R-Squared = 0.852
