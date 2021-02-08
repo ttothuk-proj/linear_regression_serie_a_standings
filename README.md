@@ -1,1 +1,1 @@
-# linear_regression_serie_a_standings
+# Serie A standings prediction using linear regression
